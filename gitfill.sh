@@ -2,29 +2,29 @@
 
 touch test.txt
 git add .
-git commit --date " 168 days ago" -m "codewars daily"
+git commit --date " 163 days ago" -m "codewars daily"
 git push -u origin main
 rm test.txt
 git add .
-git commit --date " 167 days ago" -m "codewars daily"
+git commit --date " 162 days ago" -m "codewars daily"
 git push -u origin main
 
 touch test.txt
 git add .
-git commit --date " 166 days ago" -m "codewars daily"
+git commit --date " 161 days ago" -m "codewars daily"
 git push -u origin main
 rm test.txt
 git add .
-git commit --date " 165 days ago" -m "codewars daily"
+git commit --date " 160 days ago" -m "codewars daily"
 git push -u origin main
 
 touch test.txt
 git add .
-git commit --date " 164 days ago" -m "codewars daily"
+git commit --date " 159 days ago" -m "codewars daily"
 git push -u origin main
 rm test.txt
 git add .
-git commit --date " 169 days ago" -m "codewars daily"
+git commit --date " 158 days ago" -m "codewars daily"
 git push -u origin main
 
 
