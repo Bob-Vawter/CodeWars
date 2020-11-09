@@ -2,9 +2,9 @@
 
 touch test.txt
 git add .
-git commit --date " 128 days ago" -m 'daily codewar'
+git commit --date " 130 days ago" -m 'daily codewar'
 git push -u origin main
 rm test.txt
 git add .
-git commit --date " 129 days ago" -m 'daily codewar'
+git commit --date " 131 days ago" -m 'daily codewar'
 git push -u origin main
