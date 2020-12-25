@@ -1,13 +1,4 @@
 function sumIntervals(intervals) {
-  let list = [];
-  intervals.forEach(([a, b]) => {
-    list.length = Math.max(list.length, b);
-    for (let i = a; i < b; i++) {
-      list[i] = 1;
-    }
-  });
-  return list.reduce((a, b) => a + b, 0);
-}function sumIntervals(intervals) {
   let sum = [], neg = []
   intervals.forEach(([a, b]) => {
     //set length of sum array to largest number
@@ -56,4 +47,3 @@ function sumIntervals(intervals) {
 //    [5, 11]
 // ] ); // => 19
 //
-console.log(sumIntervals([[-1,1],[-1,2]]))
