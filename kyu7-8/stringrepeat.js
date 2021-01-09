@@ -1,11 +1,12 @@
-function repeatStr (n, s) {
-  var str = ''
-  for(let i = 0;i<n;i++){
-    str += s
+function bouncingBall(h,  bounce,  window) {
+  // your code here
+  if(h<=0 || bounce>=1 || bounce<=0 || window >h){
+    return -1
   }
-  return str;
-}
+  var seen = -1
+  for(let i = 0;h>window;h*=bounce){
+    seen +=2
+  }
 
-// kyu 8
-// repeatStr = (n,s) => s.repeat(n)
-// better solution
+  return seen
+}
