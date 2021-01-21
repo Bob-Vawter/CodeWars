@@ -4,16 +4,17 @@ function removeNb (n) {
   for(let i =1;i<=n;i++){
     total+=i
   }
+  var a
   for(let i=1;i<n;i++){
-    for(let j=i+1;j<=n;j++){
-      if(i*j===total-i-j){
-        result.push([i,j])
-        result.push([j,i])
-      }
-    }
+     a = (total-i)/(i+1)
+     console.log(a)
+     if(a===Math.floor(a)){
+       result = [[a,i],[i,a]]
+     }
   }
-  return result
+  return []
 }
 
+console.log(removeNb(26))
 // stack to long for big number have to figure out a way without loop?
 //kyu 5
