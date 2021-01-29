@@ -1,8 +1,11 @@
-// Complete the square sum function so that it squares each number passed into it and then sums the results together.
-//
-// For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+// pig latin converter
 
-function squareSum(numbers){
-  const reducer = (a,b) => a + (b*b)
-  return numbers.length != 0 ? numbers.reduce(reducer,0):0
+function pigLatin(phrase){
+  var letter = ''
+  phrase = phrase.toLowerCase().split(' ')
+  phrase.forEach((item,i)=>{
+    letter = item.slice(0,1)
+    phrase[i]=item.slice(1,item.length)+letter + 'ay'
+  })
+  return phrase.join(' ')
 }
