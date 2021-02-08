@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 # declare STRING variable
-touch text.txt
 git add .
-git status
+git commit --date " 39 days ago" -m 'cw daily'
+git push -u origin main
