@@ -9,6 +9,7 @@ function howManyStep(a,b){
     steps++
   }
   return steps
+
 }
 
 console.log(howManyStep(1,10))
