@@ -1,4 +1,6 @@
-//Printer Errors
-function printerError(s) {
-    return s.split('').filter(a=>a.charCodeAt()>'\m'.charCodeAt()).length+'/'+s.length
+//7kyu no odds easy
+
+function noOdds( values ){
+  // Return all non-odd values
+  return values.filter(a => a%2==0)
 }
