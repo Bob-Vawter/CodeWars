@@ -20,3 +20,11 @@ function domainName(url){
   // default return if no trailing . or leading http
   return(url)
 }
+
+//more elegant solution
+//function domainName(url){
+//  url = url.replace("https://", '');
+//  url = url.replace("http://", '');
+//  url = url.replace("www.", '');
+//  return url.split('.')[0];
+//};
