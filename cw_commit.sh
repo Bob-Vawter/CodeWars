@@ -1,10 +1,5 @@
 #!/usr/bin/bash
 
-touch test.txt
 git add .
-git commit --date " 152 days ago" -m 'daily codewar'
-git push -u origin main
-rm test.txt
-git add .
-git commit --date " 153 days ago" -m 'daily codewar'
+git commit -m "codewars daily"
 git push -u origin main
