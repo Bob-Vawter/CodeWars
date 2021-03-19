@@ -25,3 +25,5 @@ function battleCodes(armyLetters, armyNumbers) {
   armyLetters = armyLetters.map(a=>String.fromCharCode(a+96))
   return armyLetters.length>armyNumbers.length?armyLetters.join(''):(armyLetters.length<armyNumbers.length?armyNumbers.join(''):'Draw')
 }
+
+//kyu 6
