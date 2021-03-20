@@ -5,6 +5,7 @@ function battleCodes(armyLetters, armyNumbers) {
   }
   var letWar = 0, numWar = 0
   armyLetters = armyLetters.split('').map(a=>a.charCodeAt()-96)
+  console.log(armyLetters)
   armyNumbers = armyNumbers.split('')
   while(armyLetters.length>0&&armyNumbers.length>0){
     letWar = armyLetters[armyLetters.length-1]
@@ -15,8 +16,14 @@ function battleCodes(armyLetters, armyNumbers) {
     }
     armyLetters[armyLetters.length-1]-=numWar
     armyLetters[armyLetters.length-2]-=numWar
-    if(armyLetters[armyLetters.length-1]<=0){
-      armyLetters.pop()
+    if(armyLetters[armyLetters.length-2]<=0){
+      if(armyLetters[armyLetters.length-1]>0){
+        armyLetters[armyLetters.length-2]=armyLetters[armyLetters.length-1]
+        armyLetters[armyLetters.length-1]=0
+      } else {
+        armyLetters.pop()
+        armyLetters.pop()
+      }
     }
     if(armyLetters[armyLetters.length-1]<=0){
       armyLetters.pop()
@@ -25,5 +32,3 @@ function battleCodes(armyLetters, armyNumbers) {
   armyLetters = armyLetters.map(a=>String.fromCharCode(a+96))
   return armyLetters.length>armyNumbers.length?armyLetters.join(''):(armyLetters.length<armyNumbers.length?armyNumbers.join(''):'Draw')
 }
-
-//kyu 6
