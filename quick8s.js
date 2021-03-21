@@ -25,3 +25,15 @@ function countPositivesSumNegatives(input) {
 function fakeBin(x){
   return x.split('').map(a=>a>=5?1:0).join('')
 }
+
+function pipeFix(n){
+  var min = n[0]
+  var max = n[n.length-1]
+  var arr = []
+  var arrLength = max-min+1
+  for(let i = 0; i<arrLength; i++){
+    arr.push(min)
+    min++
+  }
+  return arr
+}
