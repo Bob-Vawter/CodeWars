@@ -22,3 +22,7 @@ function highAndLow(numbers){
 function accum(s) {
 	return s.split('').map((a,i)=>a.toUpperCase()+a.toLowerCase().repeat(i)).join('-')
 }
+
+function findShort(s){
+  return Math.min(...s.split(' ').map(a=>a.length))
+}
