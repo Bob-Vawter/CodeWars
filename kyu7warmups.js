@@ -18,3 +18,7 @@ function highAndLow(numbers){
   numbers = numbers.split(' ')
   return Math.max(...numbers)+" "+Math.min(...numbers)
 }
+
+function accum(s) {
+	return s.split('').map((a,i)=>a.toUpperCase()+a.toLowerCase().repeat(i)).join('-')
+}
