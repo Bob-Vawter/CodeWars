@@ -9,3 +9,12 @@ function getMiddle(s)
 {
   return s.length%2==1?s.charAt(Math.floor(s.length/2)):s.charAt(s.length/2-1)+s.charAt(s.length/2)
 }
+
+function squareDigits(num){
+  return +num.toString().split('').map(a=>(+a)**2).join('')
+}
+
+function highAndLow(numbers){
+  numbers = numbers.split(' ')
+  return Math.max(...numbers)+" "+Math.min(...numbers)
+}
