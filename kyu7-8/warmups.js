@@ -1,4 +1,5 @@
 // kyu quick warmups
+// kyu quick warmups 7 and 8s
 
 function twoSort(s) {
   s=s.sort()
@@ -13,4 +14,8 @@ function isVow(a){
     }
   })
   return a
+}
+
+function smallEnough(a, limit){
+  return Math.max(...a)<=limit
 }
