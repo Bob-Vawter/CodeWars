@@ -11,3 +11,17 @@ function DNAStrand(dna){
 // function DNAStrand(dna){
 //   return dna.split('').map(function(v){ return pairs[v] }).join('');
 // }
+
+function getSum( a,b )
+{
+  if (a>b){
+    var n = a
+    a = b
+    b = n
+  }
+  var count = a
+  for(let i = a+1; i<=b; i++){
+    count += i
+  }
+  return count
+}
