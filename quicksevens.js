@@ -25,3 +25,8 @@ function getSum( a,b )
   }
   return count
 }
+
+function sumTwoSmallestNumbers(numbers) {
+  numbers = numbers.sort((a,b)=>a-b)
+  return numbers.shift()+numbers.shift()
+}
