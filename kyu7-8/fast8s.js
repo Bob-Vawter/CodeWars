@@ -36,3 +36,7 @@ function digitize(n) {
 var stringToNumber = function(str){
   return +str;
 }
+
+function findNeedle(haystack) {
+  return "found the needle at position " + haystack.indexOf('needle')
+}
