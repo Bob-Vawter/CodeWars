@@ -32,3 +32,7 @@ function abbrevName(name){
 function digitize(n) {
   return n.toString().split('').reverse().map(a=>+a)
 }
+
+var stringToNumber = function(str){
+  return +str;
+}
