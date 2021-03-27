@@ -28,3 +28,7 @@ function monkeyCount(n) {
 function abbrevName(name){
     return name.toUpperCase().split(' ').map(a=>a.charAt(0)).join('.')
 }
+
+function digitize(n) {
+  return n.toString().split('').reverse().map(a=>+a)
+}
