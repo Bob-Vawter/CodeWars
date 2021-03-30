@@ -26,3 +26,7 @@ function aspectRatio(x,y){
 function shark(pD, sD, yS, sS, dolphin){
   return dolphin?(pD/yS<sD/(sS/2)?'Alive!':"Shark Bait!"):(pD/yS<sD/sS?'Alive!':"Shark Bait!")
 }
+
+function shark(pD, sD, yS, sS, dolphin){
+  return dolphin?(pD/yS<sD/(sS/2)?'Alive!':"Shark Bait!"):(pD/yS<sD/sS?'Alive!':"Shark Bait!")
+}
