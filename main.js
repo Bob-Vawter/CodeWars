@@ -30,3 +30,11 @@ function shark(pD, sD, yS, sS, dolphin){
 function shark(pD, sD, yS, sS, dolphin){
   return dolphin?(pD/yS<sD/(sS/2)?'Alive!':"Shark Bait!"):(pD/yS<sD/sS?'Alive!':"Shark Bait!")
 }
+
+function checkAlive (health) {
+  if (health <= 0) {
+    return false
+  } else {
+    return true
+  }
+}
