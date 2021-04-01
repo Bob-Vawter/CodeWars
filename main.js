@@ -5,4 +5,12 @@ String.prototype.toAlternatingCase = function () {
 }
 
 const capitalizeWord = (word) =>
- word.split('').map((a,i)=>i==0?a.toUpperCase():a).join('')
+word.split('').map((a,i)=>i==0?a.toUpperCase():a).join('')
+
+function testEven(n) {
+  return n%2===0
+}
+
+function getASCII(c){
+  return c.charCodeAt()
+}
