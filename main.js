@@ -1,6 +1,6 @@
 //kyu 7
-//Switcheroo
+// filter long words
 
-function switcheroo(x){
-  return x.split('').map(a=>a=='a'?'b':(a=='b'?'a':a)).join('')
+function filterLongWords(sentence, n) {
+  return sentence.split(" ").filter(x => x.length > n)
 }
