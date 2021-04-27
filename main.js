@@ -9,3 +9,6 @@
 //
 // good luck :)
 //evil or odious
+function evil(n) {
+    return n.toString(2).split('').filter(a=>a=='1').length%2==0?"It's Evil!":"It's Odious!"
+}
