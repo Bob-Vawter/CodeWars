@@ -28,7 +28,10 @@ arr = [4,5,8,2,3,9]
 arr.sort((a,b)=>a-b)
 
 // slice
-
+// The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+arr = [5,4,12,4,123,2]
+console.log(arr.slice(3))
+//output [4,123,2]
 
 // pop
 //removes last item from array
@@ -38,13 +41,35 @@ arr.pop()
 
 // shift
 //removes first item from array
+arr.shift()
+//arr = [2]
 
 // push
+// adds item to end of array in next index spot
+arr.push(7)
+// arr=[2,7]
+
 // unshift
+// adds item to front of array
+arr.unshift(1)
+// arr=[1,2,7]
+
 // includes
+// returns boolean true or false if item is in array
+arr.includes(7)
+//true
+
 // indexOf
+//returns index of found item, or -1 if not found
+arr.indexOf(5)
+// -1
+
 // every
-//
+// The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+arr.every(a=>a<8)
+//true
+
+
 // Give a short description of what the method does, how it works, it's time complexity (if appropriate), and give three examples of it in action!
 //
 // Questions to practice:
@@ -52,10 +77,18 @@ arr.pop()
 // One:
 // Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
 // [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
-//
+arr=[1,2,3,4]
+arr.reduce((a,b)=>a*b,1)
+
 // Two:
 // You will be given an array of all the family members' ages, in any order. The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed 'age' of 0. Return a new array with [youngest age, oldest age, difference between the youngest and oldest age].
-//
+arr = [12,25,63,8,43,39]
+var result = []
+arr = arr.sort((a,b)=>a-b)
+result.push(arr.shift())
+result.push(arr.pop())
+result.push(result[1]-result[0])
+
 // Three:
 // Sum all the numbers of the array except the highest and the lowest element (the value, not the index!).
 // Example:
