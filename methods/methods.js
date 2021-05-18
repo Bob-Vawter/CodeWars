@@ -94,3 +94,8 @@ result.push(result[1]-result[0])
 // Example:
 // [ 6, 2, 1, 8, 10 ] => 16
 // [ 1, 1, 11, 2, 3 ] => 6
+arr = [4,5,6,1,2,11,6,9,15]
+arr = arr.sort((a,b)=>a-b)
+arr.pop()
+arr.shift()
+arr.reduce((a,b)=>a+b,0)
