@@ -1,9 +1,14 @@
 // Please research the following string methods:
 
-// charAt
-
+// charAt(index)
+//returns char at specific index
+var str = "Don't Get Got, Get Git"
+str.charAt(4)
+//indect 4 is 't'
 
 // charCodeAt
+
+
 // concat
 // includes
 // indexOf
