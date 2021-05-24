@@ -7,9 +7,17 @@ str.charAt(4)
 //indect 4 is 't'
 
 // charCodeAt
-
+// The charCodeAt() method returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
+'AaBbCc'.charCodeAt(0)  // returns 65
+'AaBbCc'.charCodeAt(1)  // returns 97
+'AaBbCc'.charCodeAt(2)  // returns 66
+'AaBbCc'.charCodeAt(3)  // returns 98
+'AaBbCc'.charCodeAt(4)  // returns 67
+'AaBbCc'.charCodeAt(5)  // returns 99
 
 // concat
+
+
 // includes
 // indexOf
 // match
