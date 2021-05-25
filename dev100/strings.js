@@ -4,7 +4,7 @@
 //returns char at specific index
 var str = "Don't Get Got, Get Git"
 str.charAt(4)
-//indect 4 is 't'
+//index 4 is 't'
 
 // charCodeAt
 // The charCodeAt() method returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
@@ -22,15 +22,32 @@ str.charAt(4)
 'A'.concat(',','B',',','C') // returns A,B,C
 
 // includes
-
+// The includes() method performs a case-sensitive search to determine whether one string may be found within another string, returning true or false as appropriate.
+'This cool string'.includes('cool') //returns true
+'This cool string'.includes('Cool') //returns false
+'This cool string'.includes('Cool'.toLowerCase()) //returns true
 
 // indexOf
+
+
 // match
+
+
 // repeat
+
+
 // replace
+
+
 // search
+
+
 // slice
+
+
 // split
+
+
 // substr
 
 // toLowerCase
