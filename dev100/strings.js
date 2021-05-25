@@ -16,9 +16,14 @@ str.charAt(4)
 'AaBbCc'.charCodeAt(5)  // returns 99
 
 // concat
-
+// The concat() method concatenates the string arguments to the calling string and returns a new string.
+'ABC'.concat('abc') //returns ABCabc
+'ABC'.concat(' ','DEF') //returns ABC DEF
+'A'.concat(',','B',',','C') // returns A,B,C
 
 // includes
+
+
 // indexOf
 // match
 // repeat
