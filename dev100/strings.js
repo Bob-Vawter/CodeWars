@@ -28,9 +28,11 @@ str.charAt(4)
 'This cool string'.includes('Cool'.toLowerCase()) //returns true
 
 // indexOf
-
+// The indexOf() method returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex. Returns -1 if the value is not found.00
+'This cool string'.indexOf('cool') //returns 5
 
 // match
+// The match() method retrieves the result of matching a string against a regular expression.
 
 
 // repeat
