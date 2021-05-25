@@ -50,7 +50,7 @@ var regex2 = /A-E/ig
 
 // search
 // The search() method executes a search for a match between a regular expression and this String object.
-
+'Eat at Joes'.search(/[a-z]/g) // returns 1
 
 // slice
 // The slice() method extracts a section of a string and returns it as a new string, without modifying the original string.
