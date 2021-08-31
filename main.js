@@ -1,13 +1,19 @@
-//kyu 7
-//Multiples
-//mine
-function multiple(x) {
-  var result = ''
-  result += x%3==0?'Bang':''
-  result += x%5==0?'Boom':''
-  return result.length>1?result:'Miss'
-}
-//cw top
-function multiple(x) {
- return x % 15 == 0 ? "BangBoom" : x % 3 == 0 ? "Bang" : x % 5 == 0 ? "Boom" : "Miss"
+//kyu 6
+//pyramid array
+function pyramid(n) {
+  var newArray = [];
+
+  if(n === 0) {
+    return [];
+  } else if(n > 0) {
+
+    for(let i = 0; i < n; i++) {
+      newArray[i] = new Array();
+      for(let j = 0; j <= i; j++) {
+        newArray[i][j] = 1;
+      }
+    }
+  }
+
+  return newArray;
 }
