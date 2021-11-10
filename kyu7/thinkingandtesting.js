@@ -16,3 +16,8 @@ function testit(s){
 
   return count
 }
+
+// better
+function testit(s) {
+  return (s.match(/w.*?o.*?r.*?d/ig) || []).length;
+}
